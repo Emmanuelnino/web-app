@@ -8,10 +8,13 @@
 body{
     background: #000;
     overflow: hidden;
-
+    
 }
+@media(min-width: 768px){
+
 .header{
     position: fixed;
+    flex-direction: column;
     width: 100%;
     top: 0;
     left: 0;
@@ -78,8 +81,23 @@ body{
     font-size: 47px;
     font-weight: 700;
     line-height: 1.2;
-
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    overflow: hidden;
+    border-right: 2px solid #333;
+    white-space: nowrap;
+    margin: 0;
 }
+@keyframes fadeIn{
+
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 5;
+    }
+}
+    
 .hero-content h3{
     font-size: 32px;
     font-weight: 700;
@@ -198,6 +216,47 @@ body{
     height: 100%;
 }
 .hero-img{
-    position: absolute4;
+    position: absolute;
 }
+}
+.header{
+    position: fixed;
+    flex-direction: row;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px 10px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
 
+}
+.logo {
+    font-size: 25px;
+    transition: 230ms;
+    opacity: 1;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    width: 100px;
+    aspect-ratio: 12 / 9; 
+    border-radius: 50%;
+    box-shadow: 0, 2px 4px rgba(0, 0, 0, 0.1 );
+
+}
+.logo:hover{
+    opacity: none;
+    text-transform: none;   
+    height: 100%;
+    -webkit-text-fill-color: #000;
+
+}
+.logo:hover::before{
+    opacity: none;
+    text-transform: none;   
+    color: blue;
+    height: 100%;
+    
+}
