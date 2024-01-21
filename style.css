@@ -203,39 +203,3 @@ body{
     position: absolute4;
 }
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "poppins", sans-serif;
-    
-}   
-body{
-    background: #000;
-    overflow: hidden;
-
-}
-.header{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 20px 10px;
-    background: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-
-}
-.logo {
-    font-size: 25px;
-    color: white;
-    text-decoration: none;
-    font-weight: 700;
-    width: 100px;
-    aspect-ratio: 12 / 9; 
-    border-radius: 50%;
-    box-shadow: 0, 2px 4px rgba(0, 0, 0, 0.1 );
-
-}
