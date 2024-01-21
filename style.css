@@ -1,5 +1,3 @@
-@media (min-width:768){
-
 *{
     margin: 0;
     padding: 0;
@@ -202,4 +200,4 @@ body{
 .hero-img{
     position: absolute4;
 }
-}
+
